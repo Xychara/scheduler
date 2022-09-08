@@ -50,10 +50,12 @@ const CourseList = ({ courses }) => (
 
 
 const Course = ({ course }) => (
-  <div className="card m-2 p-1">
+  <div className="card m-2 p-2">
     <div className="card-body">
       <div className="card-title">{ getCourseTerm(course) } CS { getCourseNumber(course) }</div>
       <div className="card-text">{ course.title }</div>
+      <hr/>
+      <div className="card-text">{course.meets}</div>
     </div>
   </div>
 );
